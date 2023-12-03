@@ -1,0 +1,26 @@
+config sw1
+
+Switch(config)#vlan 10
+Switch(config-vlan)#name kantor
+Switch(config-vlan)#exit
+Switch(config)#vlan 20
+Switch(config-vlan)#name kantor2
+Switch(config-vlan)#
+Switch(config)#int fa0/1
+Switch(config-if)#sw
+Switch(config-if)#switchport mode 
+Switch(config-if)#switchport mode acc
+Switch(config-if)#switchport mode access 
+Switch(config-if)#swi
+Switch(config-if)#switchport acc
+Switch(config-if)#switchport access v
+Switch(config-if)#switchport access vlan 10
+Switch(config-if)#exit
+Switch(config)#int fa0/2
+Switch(config-if)#sw
+Switch(config-if)#switchport mode access
+Switch(config-if)#s
+Switch(config-if)#swi
+Switch(config-if)#switchport acce
+Switch(config-if)#switchport access vlan 20
+Switch(config-if)#exit
